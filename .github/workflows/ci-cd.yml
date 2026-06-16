@@ -74,7 +74,7 @@ jobs:
                 # .env.production 파일 생성 (gitignore에서 제외되어 있으므로)
                 # REACT_APP_API_BASE_URL : http://54.116.190.160:8080
 
-                echo "REACT_APP_API_BASE_URL=${{secrets.REACT_APP_API_BASE_URL}}" > .env.production                
+                echo "REACT_APP_API_BASE_URL=${{secrets.REACT_APP_API_BASE_URL}}" > .env.production
                 echo "REACT_APP_NAVER_CLIENT_ID=${{secrets.REACT_APP_NAVER_CLIENT_ID}}" >> .env.production
                 echo "REACT_APP_NAVER_REDIRECT_URI=${{secrets.REACT_APP_NAVER_REDIRECT_URI}}" >> .env.production
                 echo "REACT_APP_KAKAO_CLIENT_ID=${{secrets.REACT_APP_KAKAO_CLIENT_ID}}" >> .env.production
