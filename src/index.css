@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 15px;
+}
+
+input, textarea {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: #e2e8f0;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+}
+
+input:focus, textarea:focus {
+  border-color: #6366f1;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #6366f1;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #4f46e5;
+}
+
+button:disabled {
+  background: #334155;
+  color: #64748b;
+  cursor: not-allowed;
+}
+button:disabled:hover{
+  background: #334255;
+}
+
+button.danger {
+  background: #ef4444;
+}
+
+button.danger:hover {
+  background: #dc2626;
+}
+
+button.ghost {
+  background: transparent;
+  border: 1px solid #334155;
+  color: #94a3b8;
+}
+
+button.ghost:hover {
+  background: #1e293b;
+}
+
+button.sm {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+/* ── 레이아웃 ── */
+.app {
+  min-height: 100vh;
+  background: #020c1b;
+  color: #e2e8f0;
+}
+
+.page {
+  padding: 40px 32px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+/* ── 카드 ── */
+.card {
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  background: #0f1f35;
+}
+
+/* ── 텍스트 ── */
+.muted {
+  color: #94a3b8;
+}
+
+.error-text {
+  color: #ef4444;
+}
+
+.empty {
+  color: #475569;
+  text-align: center;
+  padding: 32px 0;
+}
+
+/* ── 네비게이션 ── */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 28px;
+  border-bottom: 1px solid #1e293b;
+  background: #0f172a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 14px;
+  color: inherit;
+}
+
+nav a.active {
+  color: #6366f1;
+  font-weight: bold;
+}
+
+.nav-logo {
+  font-weight: bold;
+  font-size: 16px;
+  color: #6366f1;
+  margin-right: 8px;
+}
