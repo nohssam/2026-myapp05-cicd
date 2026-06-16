@@ -48,6 +48,10 @@ COPY --from=build /app/build /usr/share/nginx/html
 # - Nginx의 기본 웹 루트 디렉토리로 복사
 # - 빌드된 정적 파일만 복사하므로 이미지 크기가 매우 작음
 
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+# - React SPA 라우팅을 위한 nginx 설정 파일 복사
+# - /oauth/callback 등 클라이언트 라우트가 동작하도록 함
+
 EXPOSE 80
 # - 컨테이너가 80번 포트를 사용함을 문서화
 # - 실제 포트 매핑은 docker run -p 옵션으로 설정
