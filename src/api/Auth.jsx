@@ -61,11 +61,12 @@ const generateRandomState = () => {
 }
 
 // 네이버 OAuth 콜백 API 호출
-export const naverOAuthCallback = (code, state) =>
+export const naverOAuthCallback = (code, state) => 
     api.post('/members/oauth/naver', { code, state })
 
+
 // 카카오 OAuth 콜백 API 호출
-export const kakaoOAuthCallback = (code) =>
+export const kakaoOAuthCallback = (code) => 
     api.post('/members/oauth/kakao', { code })
 
 
